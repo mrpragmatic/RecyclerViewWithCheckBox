@@ -8,10 +8,6 @@ public class Model implements Parcelable {
     private String itemName;
     private boolean isSelected;
 
-    Model (){
-        this(null,false);
-    }
-
     Model(String itemName, boolean isSelected) {
         this.itemName = itemName;
         this.isSelected = isSelected;
@@ -34,7 +30,7 @@ public class Model implements Parcelable {
         }
     };
 
-    public String getItemName() {
+    String getItemName() {
         return itemName;
     }
 
@@ -42,11 +38,11 @@ public class Model implements Parcelable {
         this.itemName = itemName;
     }
 
-    public boolean isSelected() {
+    boolean isSelected() {
         return isSelected;
     }
 
-    public void setSelected(boolean selected) {
+    void setSelected(boolean selected) {
         isSelected = selected;
     }
 
